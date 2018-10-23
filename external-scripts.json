@@ -3,6 +3,5 @@
   "hubot-help",
   "hubot-maps",
   "hubot-redis-brain",
-  "hubot-rules",
-  "hubot-shipit"
+  "hubot-rules"
 ]
