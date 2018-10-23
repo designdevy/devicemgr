@@ -10,8 +10,6 @@
 
 module.exports = (robot) ->
 
-  export REDIS_URL=redis://:c1d9cecbfab8a6dfdb32fb9f194975d334c2a2740837d931686f8dcbefff4a1f@127.0.0.1:16379/devicemgr
-
   robot.hear /badger/i, (res) ->
     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
