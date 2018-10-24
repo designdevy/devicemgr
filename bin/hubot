@@ -2,7 +2,9 @@
 
 set -e
 
-npm install
-export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+cd ~/devicemgr
 
-exec node_modules/.bin/hubot --name "devicemgr" "$@"
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+export HUBOT_SLACK_TOKEN="xoxb-431019629750-458040921655-dfY3yWap3AkaHVm1Hzwjw70g"
+
+exec node_modules/.bin/hubot --name "devicemgr" "$@" --adapter "slack"
